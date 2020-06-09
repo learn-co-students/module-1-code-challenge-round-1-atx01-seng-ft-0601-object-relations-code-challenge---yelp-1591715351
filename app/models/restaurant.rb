@@ -15,7 +15,7 @@ class Restaurant
    def reviews
      Review.all.select do |review|
          review.restaurant == self
-         @review
+         
 
     end
   end
