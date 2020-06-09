@@ -4,7 +4,6 @@ class Customer
   @@all = []
 
   #given_name and family_name are strings
-
   def initialize(given_name, family_name)
     @given_name = given_name
     @family_name  = family_name
@@ -26,8 +25,6 @@ class Customer
 
   #rest(restaurant instance), rate(integer 1-5)
   def add_review(rest, rate)
-
-    #customer, restaurant, rating
     Review.new(self, rest, rate)
   end
 
